@@ -19,6 +19,7 @@
 	di = diff
 	dc = diff --cached
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
 	# Find branches containing commit
 	fb = "!f() { git branch -a --contains $1; }; f"
