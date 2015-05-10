@@ -66,3 +66,4 @@ source /usr/local/etc/profile.d/z.sh
 eval "$(ssh-agent -s)" >/dev/null
 ssh-add ~/.ssh/id_rsa_github 2>/dev/null
 ssh-add ~/.ssh/id_rsa_bitbucket 2>/dev/null
+ssh-add ~/.ssh/id_rsa_heroku 2>/dev/null
