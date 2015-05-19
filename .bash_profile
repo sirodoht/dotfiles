@@ -59,6 +59,11 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # Pass bash completion
 source /usr/local/etc/bash_completion.d/password-store
 
+# Scala
+export SCALA_HOME="/usr/local/Cellar/scala"
+## Scala bash completion
+source /usr/local/etc/bash_completion.d/scala
+
 # z - jump around
 source /usr/local/etc/profile.d/z.sh
 
