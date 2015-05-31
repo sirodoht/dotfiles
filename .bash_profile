@@ -59,6 +59,9 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # Pass bash completion
 source /usr/local/etc/bash_completion.d/password-store
 
+# Android / ADB
+export PATH="/Users/sirodoht/Library/Android/sdk/platform-tools":$PATH
+
 # Scala
 export SCALA_HOME="/usr/local/Cellar/scala"
 ## Scala bash completion
