@@ -67,6 +67,9 @@ export SCALA_HOME="/usr/local/Cellar/scala"
 ## Scala bash completion
 source /usr/local/etc/bash_completion.d/scala
 
+# Go lang
+export GOPATH="$HOME/go"
+
 # z - jump around
 source /usr/local/etc/profile.d/z.sh
 
