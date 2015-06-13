@@ -18,6 +18,7 @@
 	br = branch
 	di = diff
 	dc = diff --cached
+	sub = submodule
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
