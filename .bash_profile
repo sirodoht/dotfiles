@@ -56,22 +56,25 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-# Pass bash completion
-source /usr/local/etc/bash_completion.d/password-store
+# Git bash completion
+source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
 
 # Android / ADB
-export PATH="/Users/sirodoht/Library/Android/sdk/platform-tools":$PATH
+export PATH="${HOME}/Library/Android/sdk/platform-tools":$PATH
 
 # Scala
-export SCALA_HOME="/usr/local/Cellar/scala"
+export SCALA_HOME="$(brew --prefix)/Cellar/scala"
 ## Scala bash completion
-source /usr/local/etc/bash_completion.d/scala
+source "$(brew --prefix)/etc/bash_completion.d/scala"
 
 # Go lang
 export GOPATH="$HOME/go"
 
 # z - jump around
-source /usr/local/etc/profile.d/z.sh
+source "$(brew --prefix)/etc/profile.d/z.sh"
+
+# Pass bash completion
+source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
 # Add SSH Keys with silent output
 eval "$(ssh-agent -s)" >/dev/null
