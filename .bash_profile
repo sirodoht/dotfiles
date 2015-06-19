@@ -62,6 +62,9 @@ source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
 # Android / ADB
 export PATH="${HOME}/Library/Android/sdk/platform-tools":$PATH
 
+# Composer binaries
+export PATH="${HOME}/.composer/vendor/bin":$PATH
+
 # Scala
 export SCALA_HOME="$(brew --prefix)/Cellar/scala"
 ## Scala bash completion
