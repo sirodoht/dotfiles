@@ -79,6 +79,3 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 # Pass bash completion
 source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
-# Add SSH Keys with silent output
-eval "$(ssh-agent -s)" >/dev/null
-ssh-add ~/.ssh/id_rsa 2>/dev/null
