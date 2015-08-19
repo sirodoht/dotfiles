@@ -79,3 +79,7 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 # Pass bash completion
 source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
+# Node Version Manager
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
