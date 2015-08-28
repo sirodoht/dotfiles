@@ -59,19 +59,8 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # Git bash completion
 source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
 
-# Android / ADB
-export PATH="${HOME}/Library/Android/sdk/platform-tools":$PATH
-
-# Composer binaries
-export PATH="${HOME}/.composer/vendor/bin":$PATH
-
-# Scala
-export SCALA_HOME="$(brew --prefix)/Cellar/scala"
-## Scala bash completion
+# Scala bash completion
 source "$(brew --prefix)/etc/bash_completion.d/scala"
-
-# Go lang
-export GOPATH="$HOME/go"
 
 # z - jump around
 source "$(brew --prefix)/etc/profile.d/z.sh"
@@ -80,6 +69,4 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
 # Node Version Manager
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
+source ""$(brew --prefix nvm)/nvm.sh"
