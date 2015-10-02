@@ -69,4 +69,4 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
 # Node Version Manager
-source ""$(brew --prefix nvm)/nvm.sh"
+source "$(brew --prefix nvm)/nvm.sh"
