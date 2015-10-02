@@ -56,6 +56,9 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+# Extra brew path for some taps
+PATH="/usr/local/sbin:$PATH"
+
 # Git bash completion
 source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
 
