@@ -73,3 +73,9 @@ source "$(brew --prefix)/etc/bash_completion.d/password-store"
 
 # Node Version Manager
 source "$(brew --prefix nvm)/nvm.sh"
+
+# rbenv
+if which rbenv > /dev/null; then
+	eval "$(rbenv init -)";
+fi
+
