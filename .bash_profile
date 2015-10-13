@@ -79,3 +79,6 @@ if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
 
+# nvm use default version
+nvm use default
+
