@@ -59,26 +59,11 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 # Extra brew path for some taps
 PATH="/usr/local/sbin:$PATH"
 
-# Git bash completion
-source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
-
-# Scala bash completion
-source "$(brew --prefix)/etc/bash_completion.d/scala"
-
 # z - jump around
 source "$(brew --prefix)/etc/profile.d/z.sh"
-
-# Pass bash completion
-source "$(brew --prefix)/etc/bash_completion.d/password-store"
-
-# Node Version Manager
-source "$(brew --prefix nvm)/nvm.sh"
 
 # rbenv
 if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
-
-# nvm use default version
-nvm use default
 
