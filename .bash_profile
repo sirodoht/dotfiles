@@ -67,3 +67,10 @@ if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
 
+# added by travis gem
+[ -f /Users/sirodoht/.travis/travis.sh ] && source /Users/sirodoht/.travis/travis.sh
+
+# added by nvm auto-install script
+export NVM_DIR="/Users/sirodoht/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
