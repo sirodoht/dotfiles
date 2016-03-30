@@ -30,7 +30,7 @@ export PATH="${HOME}/.composer/vendor/bin":$PATH
 export SCALA_HOME="$(brew --prefix)/Cellar/scala"
 
 # Go lang
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/Projects/go-home"
 
 # Node Version Manager
 export NVM_DIR=~/.nvm
