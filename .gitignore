@@ -13,3 +13,5 @@ Thumbs.db
 # Compiled Python files
 *.pyc
 
+# File for protected variables and scripts
+.extra
