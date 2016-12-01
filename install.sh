@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
 function syncDotfiles() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "install.sh" \
-		--exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
+	rsync --exclude ".git/" \
+        --exclude ".DS_Store" \
+        --exclude "install.sh" \
+		--exclude "README.md" \
+        --exclude "LICENSE" \
+        -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
 
