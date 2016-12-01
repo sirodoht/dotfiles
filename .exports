@@ -23,14 +23,6 @@ export GREP_OPTIONS='--color=auto';
 # Android / ADB
 export PATH="${HOME}/Library/Android/sdk/platform-tools":$PATH
 
-# Composer binaries
-export PATH="${HOME}/.composer/vendor/bin":$PATH
-
-# Scala
-export SCALA_HOME="$(brew --prefix)/Cellar/scala"
-
 # Go lang
 export GOPATH="$HOME/Projects/go-home"
 
-# Node Version Manager
-export NVM_DIR=~/.nvm
