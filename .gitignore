@@ -1,3 +1,6 @@
+# Compiled Python files
+*.pyc
+
 # Folder view configuration files
 .DS_Store
 Desktop.ini
@@ -9,9 +12,6 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-
-# Compiled Python files
-*.pyc
 
 # File for protected variables and scripts
 .extra
