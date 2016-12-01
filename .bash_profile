@@ -32,6 +32,9 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
+# Add tab completion for other commands
+source "/usr/local/etc/bash_completion";
+
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 	complete -o default -o nospace -F _git g;
@@ -47,14 +50,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# npm & node
-NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$NPM_PACKAGES/bin:$PATH"
-
-## Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
 # Extra brew path for some taps
 PATH="/usr/local/sbin:$PATH"
 
@@ -65,11 +60,4 @@ source "$(brew --prefix)/etc/profile.d/z.sh"
 if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
-
-# added by travis gem
-[ -f /Users/sirodoht/.travis/travis.sh ] && source /Users/sirodoht/.travis/travis.sh
-
-# added by nvm auto-install script
-export NVM_DIR="/Users/sirodoht/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
