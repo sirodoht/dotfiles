@@ -88,7 +88,7 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'Shutnik/jshint2.vim'
+"Plugin 'Shutnik/jshint2.vim'
 
 " Press ctrl+P to activate.
 Plugin 'ctrlpvim/ctrlp.vim'
