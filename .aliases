@@ -16,8 +16,8 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
-# @sindresorhus' trash, a safer rm
-alias t="trash"
+# https://github.com/PhrozenByte/rmtrash
+alias t="rmtrash"
 # npm.im/gh-home - go to github repo page
 alias gh='gh-home'
 
