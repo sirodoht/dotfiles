@@ -51,13 +51,16 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # Extra brew path for some taps
-PATH="/usr/local/sbin:$PATH"
+PATH="/usr/local/sbin:$PATH";
 
 # z - jump around
-source "$(brew --prefix)/etc/profile.d/z.sh"
+source "$(brew --prefix)/etc/profile.d/z.sh";
 
 # rbenv
 if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
+
+# rust lang
+PATH="~/.cargo/bin";
 
