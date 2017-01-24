@@ -62,5 +62,5 @@ if which rbenv > /dev/null; then
 fi
 
 # rust lang
-PATH="~/.cargo/bin";
+PATH="$PATH:~/.cargo/bin";
 
