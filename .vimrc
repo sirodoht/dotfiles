@@ -89,6 +89,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'digitaltoad/vim-pug'
 "Plugin 'Shutnik/jshint2.vim'
+Plugin 'rust-lang/rust.vim'
 
 " Press ctrl+P to activate.
 Plugin 'ctrlpvim/ctrlp.vim'
