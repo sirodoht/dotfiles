@@ -104,7 +104,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vim-scripts/argtextobj.vim'
 
 " F2 to pastebin selection.
-Plugin 'skorokithakis/pastery.vim'
+"Plugin 'skorokithakis/pastery.vim'
 
 call vundle#end()            " required
 
