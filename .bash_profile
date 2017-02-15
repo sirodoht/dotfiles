@@ -56,9 +56,8 @@ PATH="/usr/local/sbin:$PATH";
 # z - jump around
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
-# rbenv
-eval "$(rbenv init -)";
-
 # rust lang
 PATH="$PATH:~/.cargo/bin";
 
+# rbenv
+PATH="~/.rbenv/shims:$PATH";
