@@ -28,10 +28,3 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
-
-# Android / ADB
-export PATH="${HOME}/Library/Android/sdk/platform-tools":$PATH
-
-# Go lang
-export GOPATH="$HOME/Projects/go-home"
-
