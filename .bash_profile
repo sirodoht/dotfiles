@@ -57,9 +57,7 @@ PATH="/usr/local/sbin:$PATH";
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
 # rbenv
-if which rbenv > /dev/null; then
-	eval "$(rbenv init -)";
-fi
+eval "$(rbenv init -)";
 
 # rust lang
 PATH="$PATH:~/.cargo/bin";
