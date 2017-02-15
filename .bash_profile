@@ -61,3 +61,4 @@ PATH="$PATH:~/.cargo/bin";
 
 # rbenv
 PATH="~/.rbenv/shims:$PATH";
+source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
