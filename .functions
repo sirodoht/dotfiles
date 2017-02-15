@@ -246,7 +246,7 @@ function tre() {
 }
 
 # https://transfer.sh curl function
-transfer() {
+function transfer() {
   # check arguments
   if [ $# -eq 0 ];
   then
