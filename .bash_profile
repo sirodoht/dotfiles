@@ -62,3 +62,8 @@ PATH="$PATH:~/.cargo/bin";
 # rbenv
 PATH="~/.rbenv/shims:$PATH";
 source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
+
+# Updates PATH for the Google Cloud SDK
+source '~/bin/google-cloud-sdk/path.bash.inc'
+# Enables shell command completion for gcloud.
+source '~/bin/google-cloud-sdk/completion.bash.inc'
