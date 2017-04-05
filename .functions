@@ -217,13 +217,13 @@ function a() {
 	fi;
 }
 
-# `v` with no arguments opens the current directory in Vim, otherwise opens the
+# `v` with no arguments opens the current directory in nvim, otherwise opens the
 # given location
 function v() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		nvim .;
 	else
-		vim "$@";
+		nvim "$@";
 	fi;
 }
 
