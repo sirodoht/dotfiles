@@ -20,6 +20,8 @@ alias j="jobs"
 alias t="rmtrash"
 # npm.im/gh-home - go to github repo page
 alias gh='gh-home'
+# vim
+alias vim="nvim"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
