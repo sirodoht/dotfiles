@@ -4,6 +4,7 @@ function syncDotfiles() {
 	rsync --exclude ".git/" \
         --exclude ".DS_Store" \
         --exclude "install.sh" \
+        --exclude "diff.sh" \
         --exclude "README.md" \
         --exclude "LICENSE" \
         -avh --no-perms . ~;
