@@ -67,3 +67,7 @@ source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
 source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
 # Enables shell command completion for gcloud.
 source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
+
+# Update PATH for gettext bins, needed for Django i18n commands
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
