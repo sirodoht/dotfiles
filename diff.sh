@@ -6,7 +6,6 @@ function copyDotfiles() {
     cp ~/.bash_prompt .;
     cp ~/.bashrc .;
     cp ~/.exports .;
-    cp ~/.extra .;
     cp ~/.functions .;
     cp ~/.gitconfig .;
     cp ~/.gitignore .;
