@@ -59,6 +59,9 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 # Add Rust lang bin to path
 export PATH="$PATH:~/.cargo/bin";
 
+# Add Golang bin to path
+export PATH=$PATH:$GOPATH/bin
+
 # rbenv
 export PATH="~/.rbenv/shims:$PATH";
 source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
