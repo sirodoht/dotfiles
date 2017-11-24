@@ -51,16 +51,16 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # Extra brew path for some taps
-PATH="/usr/local/sbin:$PATH";
+export PATH="/usr/local/sbin:$PATH";
 
 # z - jump around
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
-# rust lang
-PATH="$PATH:~/.cargo/bin";
+# Add Rust lang bin to path
+export PATH="$PATH:~/.cargo/bin";
 
 # rbenv
-PATH="~/.rbenv/shims:$PATH";
+export PATH="~/.rbenv/shims:$PATH";
 source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
 
 # Updates PATH for the Google Cloud SDK
@@ -70,4 +70,3 @@ source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
 
 # Update PATH for gettext bins, needed for Django i18n commands
 export PATH="/usr/local/opt/gettext/bin:$PATH"
-
