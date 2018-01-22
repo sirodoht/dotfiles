@@ -64,7 +64,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # rbenv
 export PATH="~/.rbenv/shims:$PATH";
-source "$(brew --prefix)/Cellar/rbenv/1.1.0/completions/rbenv.bash"
 
 # Updates PATH for the Google Cloud SDK
 source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
