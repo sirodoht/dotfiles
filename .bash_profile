@@ -75,3 +75,6 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # Miniconda3
 export PATH="/Users/sirodoht/miniconda3/bin:$PATH"
+
+# Flutter
+export PATH="/Users/sirodoht/flutter/bin:$PATH"
