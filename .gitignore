@@ -10,5 +10,8 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# VS Code
+.vscode/
+
 # File for protected variables and scripts
 .extra
