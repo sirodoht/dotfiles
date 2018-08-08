@@ -35,6 +35,3 @@ export GPG_TTY=$(tty);
 
 # Golang
 export GOPATH='/Users/sirodoht/Projects/go'
-
-# Scala
-export SCALA_HOME='/usr/local/opt/scala/idea'
