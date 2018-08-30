@@ -171,4 +171,4 @@ alias path='echo -e ${PATH//:/\\n}'
 alias activate="source venv/bin/activate"
 
 # Start ethereum node for rinkeby testnet
-alias startrinkeby="geth --rinkeby --cache 1024 --ipcpath /Users/sirodoht/Library/Ethereum/geth.ipc --syncmode fast --rpc --rpcaddr 127.0.0.1"
+alias rinkebynode="geth --rinkeby --cache 1024 --ipcpath /Users/sirodoht/Library/Ethereum/geth.ipc --syncmode fast --rpc --rpcaddr 127.0.0.1"
