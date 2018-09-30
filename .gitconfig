@@ -7,9 +7,6 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore
 
-[merge]
-	tool = vimdiff
-
 [push]
 	default = simple
 
@@ -56,8 +53,12 @@
 	autocorrect = 1
 
 [merge]
+	tool = vimdiff
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+
+[pager]
+	branch = false
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
