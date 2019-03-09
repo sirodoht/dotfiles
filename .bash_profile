@@ -65,10 +65,5 @@ export PATH=$PATH:$GOPATH/bin
 # rbenv
 export PATH="~/.rbenv/shims:$PATH";
 
-# Updates PATH for the Google Cloud SDK
-source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
-# Enables shell command completion for gcloud.
-source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
-
 # Update PATH for gettext bins, needed for Django i18n commands
 export PATH="/usr/local/opt/gettext/bin:$PATH"
