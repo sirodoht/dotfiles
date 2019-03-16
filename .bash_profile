@@ -67,3 +67,6 @@ export PATH="~/.rbenv/shims:$PATH";
 
 # Update PATH for gettext bins, needed for Django i18n commands
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# Silence crontab mails on term login
+unset MAILCHECK
