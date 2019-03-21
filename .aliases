@@ -16,8 +16,6 @@ alias g="git"
 
 # https://github.com/PhrozenByte/rmtrash
 alias t="rmtrash"
-# npm.im/gh-home - go to github repo page
-alias gh='gh-home'
 # vim
 alias vim="nvim"
 
