@@ -168,7 +168,8 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Python virtualenv activate
+# Python virtualenv create & activate
+alias venv="virtualenv -p python3 venv"
 alias activate="source venv/bin/activate"
 
 # Edit hosts file
