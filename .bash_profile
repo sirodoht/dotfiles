@@ -25,6 +25,9 @@ for option in autocd globstar; do
 	shopt -s "$option" 2> /dev/null;
 done;
 
+# Silence crontab mails on term login
+unset MAILCHECK
+
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
 	source "$(brew --prefix)/share/bash-completion/bash_completion";
@@ -73,5 +76,6 @@ source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
 # Update PATH for gettext bins, needed for Django i18n commands
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# Silence crontab mails on term login
-unset MAILCHECK
+# Add tab completion for kubectx and kubens
+source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
+source '/Users/sirodoht/bin/bash_completion/kubens.bash'
