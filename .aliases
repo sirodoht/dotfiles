@@ -174,3 +174,7 @@ alias activate="source venv/bin/activate"
 
 # Edit hosts file
 alias hosts="sudo vim /etc/hosts"
+
+# k8s
+alias k="kubectl"
+alias f="fluxctl"
