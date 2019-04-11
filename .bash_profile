@@ -76,6 +76,7 @@ source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
 # Update PATH for gettext bins, needed for Django i18n commands
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# Add tab completion for kubectx and kubens
+# Add tab completion for kubectl, kubectx, kubens
+source '/Users/sirodoht/bin/bash_completion/kubectl.bash'
 source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
 source '/Users/sirodoht/bin/bash_completion/kubens.bash'
