@@ -99,9 +99,6 @@ Plugin 'michaeljsmith/vim-indent-object'
 " <command>ia to use (e.g. dia).
 Plugin 'vim-scripts/argtextobj.vim'
 
-" F2 to pastebin selection.
-"Plugin 'skorokithakis/pastery.vim'
-
 call vundle#end()            " required
 
 filetype plugin indent on
@@ -115,9 +112,6 @@ endif
 set noshowmode
 set laststatus=2
 let g:airline_powerline_fonts=1
-
-" pastery customization
-let g:pastery_apikey='pBXxYPYKJUoxojQzKDANSZUYke5w2bLz'
 
 " ctrlp customization
 let g:ctrlp_map='<c-p>'
@@ -135,8 +129,4 @@ au Syntax * RainbowParenthesesLoadBraces
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeMouseMode=3
 let g:NERDTreeShowHidden=1
-
-" jshint2 customization
-let jshint2_read = 1
-let jshint2_save = 1
 
