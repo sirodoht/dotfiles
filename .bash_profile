@@ -80,3 +80,6 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 source '/Users/sirodoht/bin/bash_completion/kubectl.bash'
 source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
 source '/Users/sirodoht/bin/bash_completion/kubens.bash'
+
+# Add kubectl tab completion to `k` alias
+source <(kubectl completion bash | sed 's/kubectl/k/g')

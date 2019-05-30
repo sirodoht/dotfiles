@@ -105,6 +105,10 @@ else
 	hostStyle="${yellow}";
 fi;
 
+# Kubernetes PS1
+# https://github.com/jonmosco/kube-ps1 @ 953c7b2 / 953c7b26cab8ca09a5092fc169c66a4f0fff5db6
+source /Users/sirodoht/.kube_prompt
+
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
@@ -114,6 +118,7 @@ PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+=' $(kube_ps1) ';
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;

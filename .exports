@@ -35,3 +35,6 @@ export GPG_TTY=$(tty);
 
 # Golang
 export GOPATH='/Users/sirodoht/Projects/go'
+
+# Kubectl PS1 default off
+export KUBE_PS1_ENABLED='off'
