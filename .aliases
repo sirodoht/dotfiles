@@ -14,9 +14,10 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias g="git"
 
-# https://github.com/PhrozenByte/rmtrash
-alias t="rmtrash"
-# vim
+# https://github.com/ali-rantakari/trash
+alias t="trash"
+
+# neovim
 alias vim="nvim"
 
 # Detect which `ls` flavor is in use
