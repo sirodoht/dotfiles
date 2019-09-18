@@ -59,7 +59,7 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 export PATH="$PATH:~/.cargo/bin";
 
 # Add Golang bin to path
-export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$GOPATH/bin";
 
 # rbenv
 export PATH="~/.rbenv/shims:$PATH";
