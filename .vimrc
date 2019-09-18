@@ -1,6 +1,4 @@
 syntax on
-colorscheme molokai  " https://github.com/tomasr/molokai
-" let g:molokai_original=1
 let g:rehash256=1
 
 set number
@@ -70,36 +68,35 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle
-" required!
-Plugin 'VundleVim/Vundle.vim'
+" setup vim-plug
+call plug#begin('~/.local/share/nvim/plugged')
 
-" My Bundles here:
-"
-Plugin 'myusuf3/numbers.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bitc/vim-bad-whitespace.git'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'rust-lang/rust.vim'
+" Plugins:
+Plug 'myusuf3/numbers.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'bitc/vim-bad-whitespace.git'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'rust-lang/rust.vim'
 
 " Press ctrl+P to activate.
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " <Leader><Leader><motion> to use.
-Plugin 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
 " <command>ii to use (e.g. dii).
-Plugin 'michaeljsmith/vim-indent-object'
+Plug 'michaeljsmith/vim-indent-object'
 
 " <command>ia to use (e.g. dia).
-Plugin 'vim-scripts/argtextobj.vim'
+Plug 'vim-scripts/argtextobj.vim'
 
-call vundle#end()            " required
+" Initialize plugin system
+call plug#end()
 
 filetype plugin indent on
 
@@ -129,4 +126,3 @@ au Syntax * RainbowParenthesesLoadBraces
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeMouseMode=3
 let g:NERDTreeShowHidden=1
-
