@@ -106,7 +106,7 @@ else
 fi;
 
 # Kubernetes PS1
-# https://github.com/jonmosco/kube-ps1 @ 953c7b2 / 953c7b26cab8ca09a5092fc169c66a4f0fff5db6
+# https://github.com/jonmosco/kube-ps1 @ 0dc44fc3e2df7b1682fbd6baf829392e902312cd
 source /Users/sirodoht/.kube_prompt
 
 # Set the terminal title and prompt.
