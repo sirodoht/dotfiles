@@ -169,6 +169,9 @@ alias path='echo -e ${PATH//:/\\n}'
 alias venv="virtualenv -p python3 venv"
 alias activate="source venv/bin/activate"
 
+# Open ledger-cli data file on VSCode
+alias led="code ~/Documents/ledger.txt"
+
 # Edit hosts file
 alias hosts="sudo vim /etc/hosts"
 
