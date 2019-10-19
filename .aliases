@@ -165,6 +165,9 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
+# Show ledger journal file assets
+alias lefta='ledger -f /Users/sirodoht/Documents/ledger.txt balance --strict -BCE -X €'
+
 # Python virtualenv create & activate
 alias venv="virtualenv -p python3 venv"
 alias activate="source venv/bin/activate"
