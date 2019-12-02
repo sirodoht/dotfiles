@@ -33,8 +33,5 @@ export MANPAGER='less -X';
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
-# Golang
-export GOPATH='/Users/sirodoht/Projects/go'
-
 # Kubectl PS1 default off
 export KUBE_PS1_ENABLED='off'
