@@ -62,14 +62,14 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 export PATH="$PATH:~/.cargo/bin";
 
 # Updates PATH for the Google Cloud SDK
-source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
+#source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
 # Enables shell command completion for gcloud.
-source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
+#source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
 
 # Add tab completion for kubectl, kubectx, kubens
-source '/Users/sirodoht/bin/bash_completion/kubectl.bash'
-source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
-source '/Users/sirodoht/bin/bash_completion/kubens.bash'
+#source '/Users/sirodoht/bin/bash_completion/kubectl.bash'
+#source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
+#source '/Users/sirodoht/bin/bash_completion/kubens.bash'
 
 # Add kubectl tab completion to `k` alias
-source <(kubectl completion bash | sed 's/kubectl/k/g')
+#source <(kubectl completion bash | sed 's/kubectl/k/g')

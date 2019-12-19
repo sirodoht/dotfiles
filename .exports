@@ -37,4 +37,4 @@ export GPG_TTY=$(tty);
 export GOPATH='/Users/sirodoht/.go'
 
 # Kubectl PS1 default off
-export KUBE_PS1_ENABLED='off'
+#export KUBE_PS1_ENABLED='off'
