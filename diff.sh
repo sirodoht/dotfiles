@@ -4,6 +4,7 @@ function copyDotfiles() {
     cp ~/.aliases .;
     cp ~/.bash_profile .;
     cp ~/.bash_prompt .;
+    cp ~/.kube_prompt .;
     cp ~/.bashrc .;
     cp ~/.exports .;
     cp ~/.functions .;
