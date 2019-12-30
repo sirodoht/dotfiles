@@ -59,7 +59,7 @@ export PATH="/usr/local/sbin:$PATH";
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
 # Add Rust lang bin to path
-export PATH="$PATH:~/.cargo/bin";
+export PATH="~/.cargo/bin:$PATH";
 
 # Updates PATH for the Google Cloud SDK
 #source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
