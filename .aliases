@@ -180,3 +180,6 @@ alias hosts="sudo vim /etc/hosts"
 
 # Kubernetes CLI
 alias k="kubectl"
+
+# Count lines in git repo
+alias gitlines="git ls-files | xargs wc -l"
