@@ -58,6 +58,9 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 # Add Rust lang bin to path
 export PATH="~/.cargo/bin:$PATH";
 
+# Flutter
+export PATH="$PATH:~/flutter/bin"
+
 # Updates PATH for the Google Cloud SDK
 #source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
 # Enables shell command completion for gcloud.
