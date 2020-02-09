@@ -59,7 +59,7 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 export PATH="~/.cargo/bin:$PATH";
 
 # Flutter
-export PATH="$PATH:~/flutter/bin"
+export PATH="$PATH:~/bin/flutter/bin"
 
 # Updates PATH for the Google Cloud SDK
 #source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
