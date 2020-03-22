@@ -33,7 +33,7 @@ fi
 alias l="ls -lFh ${colorflag}"
 
 # List all files colorized in long format, excluding . and ..
-alias la="ls -lAFh ${colorflag}"
+alias la="ls -laFh ${colorflag}"
 
 # List only directories
 alias lsd="ls -lFh ${colorflag} | grep --color=never '^d'"
