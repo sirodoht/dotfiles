@@ -58,6 +58,9 @@ source "$(brew --prefix)/etc/profile.d/z.sh";
 # Add Rust lang bin to path
 export PATH="~/.cargo/bin:$PATH";
 
+# Add Golang bin to path
+export PATH="~/.go/bin:$PATH";
+
 # Flutter
 export PATH="$PATH:~/bin/flutter/bin"
 
