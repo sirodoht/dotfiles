@@ -56,13 +56,13 @@ export PATH="/usr/local/sbin:$PATH";
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
 # Add Rust lang bin to path
-export PATH="~/.cargo/bin:$PATH";
+export PATH="/Users/sirodoht/.cargo/bin:$PATH";
 
 # Add Golang bin to path
-export PATH="~/.go/bin:$PATH";
+export PATH="/Users/sirodoht/.go/bin:$PATH";
 
 # Flutter
-export PATH="$PATH:~/bin/flutter/bin"
+export PATH="$PATH:/Users/sirodoht/bin/flutter/bin"
 
 # Updates PATH for the Google Cloud SDK
 #source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
