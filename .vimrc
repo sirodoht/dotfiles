@@ -23,7 +23,7 @@ set backspace=eol,start,indent
 set mouse=a
 
 set wrap
-set colorcolumn=80
+set colorcolumn=88
 set formatoptions=qrn1
 
 set backup
