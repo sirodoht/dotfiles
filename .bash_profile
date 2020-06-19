@@ -1,10 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+# Load the shell dotfiles
+for file in ~/.{bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -37,11 +35,6 @@ fi;
 # Enable tab completion for git
 source /Users/sirodoht/bin/bash_completion/git-completion.bash
 
-# Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null; then
-	complete -o default -o nospace -F _git g;
-fi;
-
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
@@ -55,24 +48,25 @@ export PATH="/usr/local/sbin:$PATH";
 # z - jump around
 source "$(brew --prefix)/etc/profile.d/z.sh";
 
-# Add Rust lang bin to path
+# Rust bin path
 export PATH="/Users/sirodoht/.cargo/bin:$PATH";
 
-# Add Golang bin to path
+# Golang bin path
 export PATH="/Users/sirodoht/.go/bin:$PATH";
 
-# Flutter
-export PATH="$PATH:/Users/sirodoht/bin/flutter/bin"
-
-# Updates PATH for the Google Cloud SDK
-#source '/Users/sirodoht/bin/google-cloud-sdk/path.bash.inc'
-# Enables shell command completion for gcloud.
-#source '/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc'
-
-# Add tab completion for kubectl, kubectx, kubens
-#source '/Users/sirodoht/bin/bash_completion/kubectl.bash'
-#source '/Users/sirodoht/bin/bash_completion/kubectx.bash'
-#source '/Users/sirodoht/bin/bash_completion/kubens.bash'
-
-# Add kubectl tab completion to `k` alias
-#source <(kubectl completion bash | sed 's/kubectl/k/g')
+# fzf setup
+if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
+fi
+# fzf auto-completion
+[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.bash" 2> /dev/null
+# fzf key bindings
+source "/usr/local/opt/fzf/shell/key-bindings.bash"
+# fzf - use fd instead of the default find command for listing path candidates.
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+# fzf - use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
