@@ -1,40 +1,36 @@
-syntax on
+set nocompatible
+set encoding=utf-8
+set t_Co=256
+
 set number
+set showmode
 set wildmenu
 set showcmd
+set colorcolumn=88
+
 set lazyredraw
-set updatetime=500
-set nocompatible
-set t_Co=256
-set expandtab
+set notimeout
+set nofoldenable
+set wrap
+set scrolloff=3
+set backspace=indent,eol,start
+
 set shiftwidth=4
 set smarttab
 set tabstop=4
+
 set hlsearch
 set showmatch
 set incsearch
-set showmode
 set ignorecase
-set encoding=utf-8
-set gdefault
 set smartcase
 
-set backspace=eol,start,indent
-set mouse=a
-
-set wrap
-set colorcolumn=88
-set formatoptions=qrn1
-
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+set backupdir=~/.vim/cache
+set directory=~/.vim/cache
+set updatetime=500
+set modelines=0  " CVE-2007-2438
 
-filetype indent on
-
-if has('nvim')
-    let g:gitgutter_realtime=1
-    set updatetime=250
-endif
+syntax on
+filetype plugin indent on
