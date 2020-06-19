@@ -29,5 +29,9 @@ export GPG_TTY=$(tty);
 # Golang gopath
 export GOPATH='/Users/sirodoht/.go'
 
-# Kubectl PS1 default off
-#export KUBE_PS1_ENABLED='off'
+# bat
+export BAT_STYLE=changes
+export BAT_THEME=ansi-light
+
+# fzf - use fd ustead of find
+export FZF_DEFAULT_COMMAND='fd --type f'
