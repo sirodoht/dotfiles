@@ -12,7 +12,6 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias g="git"
 
 # https://github.com/ali-rantakari/trash
 alias t="trash"
