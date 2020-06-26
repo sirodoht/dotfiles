@@ -2,6 +2,11 @@
 	name = Theodore Keloglou
 	email = zf@sirodoht.com
 
+[sendemail]
+	smtpserver = smtp.postmarkapp.com
+	smtpencryption = tls
+	smtpserverport = 587
+
 [core]
 	editor = vim
 	pager = delta --light --number
