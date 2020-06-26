@@ -20,8 +20,6 @@ set smarttab
 set tabstop=4
 
 set hlsearch
-set showmatch
-set incsearch
 set ignorecase
 set smartcase
 
