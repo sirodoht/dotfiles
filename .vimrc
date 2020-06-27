@@ -9,7 +9,6 @@ set showcmd
 set colorcolumn=88
 
 set lazyredraw
-set notimeout
 set nofoldenable
 set wrap
 set scrolloff=3
