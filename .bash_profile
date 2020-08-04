@@ -45,9 +45,6 @@ complete -W "NSGlobalDomain" defaults;
 # Extra brew path for some taps
 export PATH="/usr/local/sbin:$PATH";
 
-# z - jump around
-source "$(brew --prefix)/etc/profile.d/z.sh";
-
 # Rust bin path
 export PATH="/Users/sirodoht/.cargo/bin:$PATH";
 
@@ -73,3 +70,6 @@ _fzf_compgen_dir() {
 
 # gopass bash completion
 source <(gopass completion bash)
+
+# zoxide
+eval "$(zoxide init posix --hook prompt)"
