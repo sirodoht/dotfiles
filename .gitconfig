@@ -2,14 +2,9 @@
 	name = Theodore Keloglou
 	email = zf@sirodoht.com
 
-[sendemail]
-	smtpserver = smtp.postmarkapp.com
-	smtpencryption = tls
-	smtpserverport = 587
-
 [core]
 	editor = vim
-	pager = delta --light --number
+	pager = delta --light -n
 	excludesfile = ~/.gitignore
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -29,6 +24,28 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
+[push]
+	# https://git-scm.com/docs/git-config#git-config-pushdefault
+	default = simple
+
+	# Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
+
+[pull]
+	ff = only
+
+[merge]
+	tool = vimdiff
+
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+[sendemail]
+	smtpserver = smtp.postmarkapp.com
+	smtpencryption = tls
+	smtpserverport = 587
+	confirm = auto
+
 [interactive]
 	diffFilter = delta --color-only
 
@@ -41,47 +58,25 @@
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
 
-	# Remove branches that have already been merged with master
-	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-
 [apply]
-
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
 [commit]
-
 	# https://help.github.com/articles/signing-commits-using-gpg/
 	gpgsign = false
 
 [diff]
-
 	# Detect copies as well as renames
 	renames = copies
 
 [diff "bin"]
-
 	# Use `hexdump` to diff binary files
 	textconv = hexdump -v -C
 
 [help]
-
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
-
-[merge]
-	tool = vimdiff
-
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
-
-[push]
-
-	# https://git-scm.com/docs/git-config#git-config-pushdefault
-	default = simple
-	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
 
 [pager]
 	branch = false
