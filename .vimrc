@@ -8,10 +8,9 @@ set wildmenu
 set showcmd
 set colorcolumn=88
 
-set lazyredraw
 set nofoldenable
 set wrap
-set scrolloff=3
+set scrolloff=2
 set backspace=indent,eol,start
 
 set shiftwidth=4
