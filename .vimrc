@@ -6,7 +6,7 @@ set number
 set showmode
 set wildmenu
 set showcmd
-set colorcolumn=88
+set colorcolumn=88,100
 
 set nofoldenable
 set wrap
