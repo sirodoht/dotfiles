@@ -6,7 +6,7 @@ set number
 set showmode
 set wildmenu
 set showcmd
-set colorcolumn=88,100
+set colorcolumn=80,100
 
 set nofoldenable
 set wrap
@@ -30,3 +30,12 @@ set modelines=0  " CVE-2007-2438
 
 syntax on
 filetype plugin indent on
+
+" file format preferences
+autocmd FileType c setlocal expandtab
+autocmd FileType css setlocal expandtab
+autocmd FileType html setlocal expandtab
+autocmd FileType md setlocal expandtab
+autocmd FileType py setlocal expandtab
+autocmd FileType toml setlocal expandtab
+autocmd FileType yml setlocal expandtab
