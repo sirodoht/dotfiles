@@ -37,5 +37,6 @@ autocmd FileType css setlocal expandtab
 autocmd FileType html setlocal expandtab
 autocmd FileType md setlocal expandtab
 autocmd FileType py setlocal expandtab
+autocmd FileType json setlocal expandtab
 autocmd FileType toml setlocal expandtab
 autocmd FileType yml setlocal expandtab
