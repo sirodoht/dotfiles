@@ -16,6 +16,7 @@ set backspace=indent,eol,start
 set shiftwidth=4
 set smarttab
 set tabstop=4
+set expandtab
 
 set hlsearch
 set ignorecase
@@ -32,11 +33,5 @@ syntax on
 filetype plugin indent on
 
 " file format preferences
-autocmd FileType c setlocal expandtab
-autocmd FileType css setlocal expandtab
-autocmd FileType html setlocal expandtab
-autocmd FileType md setlocal expandtab
-autocmd FileType py setlocal expandtab
-autocmd FileType json setlocal expandtab
-autocmd FileType toml setlocal expandtab
-autocmd FileType yml setlocal expandtab
+autocmd FileType go setlocal noexpandtab
+autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
