@@ -30,7 +30,6 @@ export GPG_TTY=$(tty);
 export GOPATH='/Users/sirodoht/.go'
 
 # bat
-export BAT_STYLE=changes
 export BAT_THEME=ansi-light
 
 # fzf - use fd ustead of find
