@@ -27,10 +27,10 @@ export MANPAGER='less -X';
 export GPG_TTY=$(tty);
 
 # Golang gopath
-export GOPATH='/Users/sirodoht/.go'
+export GOPATH='/Users/sirodoht/.go';
 
 # bat
-export BAT_THEME=ansi-light
+export BAT_THEME=ansi-light;
 
 # fzf - use fd ustead of find
-export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_COMMAND='fd --type f';

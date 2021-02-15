@@ -33,7 +33,7 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for git
-source /Users/sirodoht/bin/bash_completion/git-completion.bash
+source /Users/sirodoht/bin/bash_completion/git-completion.bash;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
@@ -53,23 +53,26 @@ export PATH="/Users/sirodoht/.go/bin:$PATH";
 
 # fzf setup
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
+  export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin";
 fi
 # fzf auto-completion
-[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.bash" 2> /dev/null
+[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.bash" 2> /dev/null;
 # fzf key bindings
-source "/usr/local/opt/fzf/shell/key-bindings.bash"
+source "/usr/local/opt/fzf/shell/key-bindings.bash";
 # fzf - use fd instead of the default find command for listing path candidates.
 _fzf_compgen_path() {
-  fd --hidden --follow --exclude ".git" . "$1"
+  fd --hidden --follow --exclude ".git" . "$1";
 }
 # fzf - use fd to generate the list for directory completion
 _fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1"
+  fd --type d --hidden --follow --exclude ".git" . "$1";
 }
 
 # gopass bash completion
-source <(gopass completion bash)
+source <(gopass completion bash);
 
 # zoxide
-eval "$(zoxide init posix --hook prompt)"
+eval "$(zoxide init posix --hook prompt)";
+
+# pyenv
+eval "$(pyenv init -)";
