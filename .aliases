@@ -8,9 +8,10 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 # Shortcuts
-alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
 alias p="cd ~/Code"
+alias docs="cd ~/Documents"
 
 # https://github.com/ali-rantakari/trash
 alias t="trash"
