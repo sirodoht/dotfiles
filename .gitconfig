@@ -4,7 +4,7 @@
 
 [core]
 	editor = vim
-	pager = delta --light -n
+    pager = delta --light -n --hunk-header-style omit
 	excludesfile = ~/.gitignore
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -48,15 +48,6 @@
 
 [interactive]
 	diffFilter = delta --color-only
-
-[alias]
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
-
-	# Amend the currently staged files to the latest commit
-	amend = commit --amend --reuse-message=HEAD
 
 [apply]
 	# Detect whitespace errors when applying a patch
