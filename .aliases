@@ -128,7 +128,7 @@ alias venv="python3 -m venv venv"
 alias activate="source venv/bin/activate"
 
 # Open ledger-cli data file on VSCode
-alias led="code ~/Documents/ledger.txt"
+alias led="code ~/Documents/ledger/ledger-2021.txt"
 
 # Edit hosts file
 alias hosts="sudo vim /etc/hosts"
