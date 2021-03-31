@@ -76,3 +76,6 @@ eval "$(zoxide init posix --hook prompt)";
 
 # pyenv
 eval "$(pyenv init -)";
+
+# direnv - should be last
+eval "$(direnv hook bash)";
