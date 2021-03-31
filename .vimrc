@@ -12,11 +12,10 @@ set colorcolumn=80,100
 set laststatus=2
 set statusline=%f  "filename
 set statusline+=%=  "empty space
-set statusline+=\ 0x%04B  "character under cursor
+set statusline+=\ 0x%B  "character under cursor
 set statusline+=\ %y  "filetype
 set statusline+=\ %{&fileencoding}
 set statusline+=\ %{&fileformat}
-set statusline+=\ %p%%  "cursor percentage
 set statusline+=\ %l:%c  "row:col
 
 set nofoldenable
@@ -45,4 +44,5 @@ filetype plugin indent on
 
 "file format preferences
 autocmd FileType go setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab
 autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
