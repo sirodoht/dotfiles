@@ -74,9 +74,6 @@ source <(gopass completion bash);
 # zoxide
 eval "$(zoxide init posix --hook prompt)";
 
-# pyenv
-eval "$(pyenv init -)";
-
 # gcloud - first in PATH because of /Applications/Docker.app/Contents/Resources/bin/kubectl
 export PATH="/Users/sirodoht/bin/google-cloud-sdk/bin:$PATH";
 source "/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc";
