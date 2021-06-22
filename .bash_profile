@@ -80,3 +80,6 @@ source "/Users/sirodoht/bin/google-cloud-sdk/completion.bash.inc";
 
 # direnv - should be last
 eval "$(direnv hook bash)";
+
+# nix
+source /Users/sirodoht/.nix-profile/etc/profile.d/nix.sh;
