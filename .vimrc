@@ -46,3 +46,6 @@ filetype plugin indent on
 autocmd FileType go setlocal noexpandtab
 autocmd FileType make setlocal noexpandtab
 autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
+
+"snippets
+iabbrev ipdb import ipdb; ipdb.set_trace()
