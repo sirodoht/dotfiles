@@ -51,11 +51,7 @@ export PATH="/Users/sirodoht/.cargo/bin:$PATH";
 # Golang bin path
 export PATH="/Users/sirodoht/.go/bin:$PATH";
 
-# fzf setup
-if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin";
-fi
-# fzf auto-completion
+# fzf auto-completion if shell is interactive
 [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.bash" 2> /dev/null;
 # fzf key bindings
 source "/usr/local/opt/fzf/shell/key-bindings.bash";
