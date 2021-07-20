@@ -4,7 +4,7 @@
 
 [core]
 	editor = vim
-    pager = delta --light -n --hunk-header-style omit
+	pager = delta --light -n --hunk-header-style omit
 	excludesfile = ~/.gitignore
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
