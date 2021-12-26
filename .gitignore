@@ -9,9 +9,3 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-
-# VS Code
-.vscode/
-
-# File for protected variables and scripts
-.extra
