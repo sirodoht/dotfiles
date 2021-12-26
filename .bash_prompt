@@ -106,12 +106,11 @@ fi;
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
-PS1+="\[${cyan}\] at ";
+PS1+="\[${cyan}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
-PS1+="\[${reset}${hostStyle}\] [\D{%F %T}]" # timestamp
-PS1+="\[${bold}${cyan}\] in ";
+PS1+="\[${bold}${cyan}\]:";
 PS1+="\[${green}\]\w"; # working directory full path
-PS1+="\$(prompt_git \"\[${cyan}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_git \"\[${cyan}\]\[${violet}\]\"\"\[${blue}\]\")"; # git repository details
 PS1+="\n";
 PS1+="\[${cyan}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
