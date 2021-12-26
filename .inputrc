@@ -1,3 +1,12 @@
+# Make alt+arrow to jump between words
+"\e\e[D": backward-word
+"\e\e[C": forward-word
+
+# Use the text that has already been typed as the prefix for searching through
+# commands (i.e. more intelligent Up/Down behavior)
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
@@ -6,14 +15,6 @@ set show-all-if-ambiguous on
 
 # Immediately add a trailing slash when autocompleting symlinks to directories
 set mark-symlinked-directories on
-
-# Use the text that has already been typed as the prefix for searching through
-# commands (i.e. more intelligent Up/Down behavior)
-"\e[B": history-search-forward
-"\e[A": history-search-backward
-
-# Do not autocomplete hidden files unless the pattern explicitly begins with a dot
-set match-hidden-files off
 
 # Show all autocomplete results at once
 set page-completions off
@@ -35,6 +36,3 @@ set skip-completed-text on
 set input-meta on
 set output-meta on
 set convert-meta off
-
-# Use Alt/Meta + Delete to delete the preceding word
-"\e[3;3~": kill-word
