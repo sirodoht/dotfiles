@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
 function copyDotfiles() {
-    cp ~/.aliases .;
     cp ~/.bash_profile .;
     cp ~/.bash_prompt .;
-    cp ~/.bashrc .;
-    cp ~/.exports .;
-    cp ~/.functions .;
+    cp ~/.bash_aliases .;
     cp ~/.gitconfig .;
     cp ~/.gitignore .;
     cp ~/.inputrc .;
