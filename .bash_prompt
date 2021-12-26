@@ -21,15 +21,12 @@ prompt_git() {
 		# check if the current directory is in .git before running git checks
 		if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
 
-			# Ensure the index is up to date.
-			git update-index --really-refresh -q &>/dev/null;
-
 			# Check for uncommitted changes in the index.
 			if ! $(git diff --quiet --ignore-submodules --cached); then
 				s+='+';
 			fi;
 
-			# Check for unstaged changes.
+            # Check for unstaged changes.
 			if ! $(git diff-files --quiet --ignore-submodules --); then
 				s+='!';
 			fi;
@@ -53,9 +50,9 @@ prompt_git() {
 			git rev-parse --short HEAD 2> /dev/null || \
 			echo '(unknown)')";
 
-		[ -n "${s}" ] && s=" [${s}]";
+		[ -n "${s}" ] && s="${s}";
 
-		echo -e "${1}${branchName}${2}${s}";
+		echo -e "${1}[${branchName}]${2}${s}";
 	else
 		return;
 	fi;
