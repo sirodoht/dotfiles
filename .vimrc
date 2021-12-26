@@ -16,6 +16,7 @@ set statusline+=\ 0x%B  "character under cursor
 set statusline+=\ %y  "filetype
 set statusline+=\ %{&fileencoding}
 set statusline+=\ %{&fileformat}
+set statusline+=\ %L  "total lines count
 set statusline+=\ %l:%c  "row:col
 
 set nofoldenable
