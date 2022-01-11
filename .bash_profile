@@ -35,27 +35,28 @@ shopt -s autocd;
 # Enable double star expand
 shopt -s globstar;
 
-# Enable tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
-
-# Enable tab completion for `defaults read|write NSGlobalDomain`
-complete -W "NSGlobalDomain" defaults;
-
 # Add ~/.bin to $PATH
 export PATH="$HOME/.bin:$PATH";
 
-# Enable git tab completion
-source "$HOME/.nix-profile/share/git/contrib/completion/git-completion.bash";
+# Enable bash completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
-# Enable gopass tab completion
-# https://github.com/gopasspw/gopass
-source <(gopass completion bash);
+# Enable bash completion for `defaults read|write NSGlobalDomain`
+complete -W "NSGlobalDomain" defaults;
+
+# Enable bash completions
+source "$HOME/.nix-profile/share/git/contrib/completion/git-completion.bash";
+source "$HOME/.nix-profile/share/bash-completion/completions/pass";
+source "$HOME/.nix-profile/share/bash-completion/completions/borg";
+source "$HOME/.nix-profile/share/bash-completion/completions/rg.bash";
+source "$HOME/.nix-profile/share/bash-completion/completions/fd.bash";
+source "$HOME/.nix-profile/share/bash-completion/completions/delta.bash";
 
 # Enable zoxide
 # https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init posix --hook prompt)";
 
-# Add fzf tab completion and key bindings
+# Add fzf bash completion and key bindings
 # https://github.com/junegunn/fzf
 source "$HOME/.nix-profile/share/fzf/completion.bash";
 source "$HOME/.nix-profile/share/fzf/key-bindings.bash";
