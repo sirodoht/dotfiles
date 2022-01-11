@@ -48,8 +48,8 @@ autocmd FileType go setlocal noexpandtab
 autocmd FileType make setlocal noexpandtab
 autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
 
-"exclude gopass files from cache
-au BufNewFile,BufRead /private/**/gopass** setlocal noswapfile nobackup noundofile
+"exclude pass files from cache
+autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
 
 "snippets
 iabbrev ipdb import ipdb; ipdb.set_trace()
