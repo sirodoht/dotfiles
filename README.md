@@ -1,7 +1,5 @@
 # dotfiles
 
-Heavily based on [@mathiasbynens](https://github.com/mathiasbynens/dotfiles)'.
-
 To install, `cd` into the `dotfiles` directory and run:
 
 Consider executing `./diff.sh` before installing. It will copy the files that
