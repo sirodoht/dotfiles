@@ -102,3 +102,6 @@ alias cpssh="cat ~/.ssh/id_ed25519.pub | pbcopy"
 
 # Load ssh-agent
 alias loadssh='eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519'
+
+# Generate passwords
+alias gen='echo $(pwgen -s 6 1)-$(pwgen -s 6 1)-\$$(pwgen -s 2 1)-$(pwgen -s 6 1)'
