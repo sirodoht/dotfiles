@@ -7,6 +7,7 @@ set showmode
 set wildmenu
 set showcmd
 set colorcolumn=80,100
+set shortmess-=S
 
 "statusline
 set laststatus=2
