@@ -115,6 +115,11 @@ function dataurl() {
 	echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
 }
 
+# Upload book
+function uploadbook() {
+    scp "$@" root@evey.sirodoht.com:/var/www/_books/
+}
+
 # Load nix
 source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh";
 
