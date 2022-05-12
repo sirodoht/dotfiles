@@ -51,6 +51,3 @@ autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
 
 "exclude pass files from cache
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
-
-"snippets
-iabbrev ipdb import ipdb; ipdb.set_trace()
