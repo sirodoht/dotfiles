@@ -41,6 +41,14 @@ export PATH="$HOME/.bin:$PATH";
 # Add golang bin to PATH
 export PATH="$HOME/go/bin:$PATH";
 
+# Add Python bin to PATH
+export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH";
+
+# Load anaconda
+__conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+eval "$__conda_setup"
+unset __conda_setup
+
 # Enable bash completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
@@ -123,11 +131,6 @@ function uploadbook() {
     echo Uploading to root@evey.sirodoht.com:/var/www/_books/"$2"
     scp "$1" root@evey.sirodoht.com:/var/www/_books/"$2"
 }
-
-# Load anaconda
-__conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-eval "$__conda_setup"
-unset __conda_setup
 
 # Load nix
 source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh";
