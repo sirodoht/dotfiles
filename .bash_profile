@@ -124,6 +124,11 @@ function uploadbook() {
     scp "$1" root@evey.sirodoht.com:/var/www/_books/"$2"
 }
 
+# Load anaconda
+__conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+eval "$__conda_setup"
+unset __conda_setup
+
 # Load nix
 source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh";
 
