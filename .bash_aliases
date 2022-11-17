@@ -79,12 +79,10 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-# Edit hosts file
-alias hosts="sudo vim /etc/hosts"
-
-# Edit bash dotfiles
+# Edit system files and dotfiles
 alias viprof="vim ~/.bash_profile"
 alias vialias="vim ~/.bash_aliases"
+alias vihost="sudo vim /etc/hosts"
 
 # Count lines in git repo
 alias gitlines="git ls-files | xargs wc -l"
