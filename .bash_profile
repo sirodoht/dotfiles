@@ -35,8 +35,11 @@ shopt -s autocd;
 # Enable double star expand
 shopt -s globstar;
 
-# Add ~/.bin to $PATH
+# Add ~/.bin to PATH
 export PATH="$HOME/.bin:$PATH";
+
+# Add golang bin to PATH
+export PATH="$HOME/go/bin:$PATH";
 
 # Enable bash completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
@@ -117,7 +120,8 @@ function dataurl() {
 
 # Upload book
 function uploadbook() {
-    scp "$@" root@evey.sirodoht.com:/var/www/_books/
+    echo Uploading to root@evey.sirodoht.com:/var/www/_books/"$2"
+    scp "$1" root@evey.sirodoht.com:/var/www/_books/"$2"
 }
 
 # Load nix
