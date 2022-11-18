@@ -35,8 +35,8 @@ shopt -s autocd;
 # Enable double star expand
 shopt -s globstar;
 
-# Add ~/.bin to PATH
-export PATH="$HOME/.bin:$PATH";
+# Add ~/bin to PATH
+export PATH="$HOME/bin:$PATH";
 
 # Add golang bin to PATH
 export PATH="$HOME/go/bin:$PATH";
