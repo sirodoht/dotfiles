@@ -44,6 +44,12 @@ export PATH="$HOME/go/bin:$PATH";
 # Add Python bin to PATH
 export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH";
 
+# Add deno bin to PATH
+export PATH="/Users/sirodoht/.deno/bin:$PATH";
+
+# Load rbenv
+eval "$(~/.rbenv/bin/rbenv init - bash)";
+
 # Load anaconda
 __conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 eval "$__conda_setup"
@@ -124,12 +130,6 @@ function dataurl() {
 		mimeType="${mimeType};charset=utf-8";
 	fi
 	echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
-}
-
-# Upload book
-function uploadbook() {
-    echo Uploading to root@evey.sirodoht.com:/var/www/_books/"$2"
-    scp "$1" root@evey.sirodoht.com:/var/www/_books/"$2"
 }
 
 # Load nix
