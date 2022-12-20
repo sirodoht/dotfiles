@@ -48,6 +48,8 @@ filetype plugin indent on
 autocmd FileType go setlocal noexpandtab
 autocmd FileType make setlocal noexpandtab
 autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
 
 "exclude pass files from cache
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
