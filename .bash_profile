@@ -66,11 +66,10 @@ complete -W "NSGlobalDomain" defaults;
 
 # Enable bash completions
 source "$HOME/.nix-profile/share/git/contrib/completion/git-completion.bash";
-source "$HOME/.nix-profile/share/bash-completion/completions/pass";
-source "$HOME/.nix-profile/share/bash-completion/completions/borg";
-source "$HOME/.nix-profile/share/bash-completion/completions/rg.bash";
 source "$HOME/.nix-profile/share/bash-completion/completions/fd.bash";
-source "$HOME/.nix-profile/share/bash-completion/completions/delta.bash";
+source "$HOME/.nix-profile/share/bash-completion/completions/nix";
+source "$HOME/.nix-profile/share/bash-completion/completions/rg.bash";
+source "$HOME/.nix-profile/share/bash-completion/completions/zoxide.bash";
 
 # Enable zoxide
 # https://github.com/ajeetdsouza/zoxide
