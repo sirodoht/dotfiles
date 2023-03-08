@@ -68,6 +68,7 @@ complete -W "NSGlobalDomain" defaults;
 source "$HOME/.nix-profile/share/git/contrib/completion/git-completion.bash";
 source "$HOME/.nix-profile/share/bash-completion/completions/fd.bash";
 source "$HOME/.nix-profile/share/bash-completion/completions/nix";
+source "$HOME/.nix-profile/share/bash-completion/completions/pass";
 source "$HOME/.nix-profile/share/bash-completion/completions/rg.bash";
 source "$HOME/.nix-profile/share/bash-completion/completions/zoxide.bash";
 
