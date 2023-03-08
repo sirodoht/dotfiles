@@ -41,6 +41,9 @@ export PATH="$HOME/bin:$PATH";
 # Add golang bin to PATH
 export PATH="$HOME/go/bin:$PATH";
 
+# Load rust env
+source "$HOME/.cargo/env"
+
 # Add Python bin to PATH
 export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH";
 
