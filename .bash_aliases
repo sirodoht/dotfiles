@@ -10,7 +10,7 @@ alias -- -="cd -"
 # Shortcuts
 alias dt="cd ~/Desktop"
 alias dl="cd ~/Downloads"
-alias p="cd ~/Code"
+alias p="cd ~/src"
 alias docs="cd ~/Documents"
 
 # macOS `ls` color options
