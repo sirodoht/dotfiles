@@ -44,14 +44,17 @@ export PATH="$HOME/go/bin:$PATH";
 # Load rust env
 source "$HOME/.cargo/env"
 
-# Add Python bin to PATH
-export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH";
-
 # Add deno bin to PATH
 export PATH="/Users/sirodoht/.deno/bin:$PATH";
 
+# Add Racket to PATH
+export PATH="/Applications/Racket v8.8/bin:$PATH";
+
 # Load rbenv
 eval "$(~/.rbenv/bin/rbenv init - bash)";
+
+# Add Python bin to PATH
+export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:$PATH";
 
 # Load anaconda
 __conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -66,10 +69,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # Enable bash completions
 source "$HOME/.nix-profile/share/git/contrib/completion/git-completion.bash";
-source "$HOME/.nix-profile/share/bash-completion/completions/fd.bash";
-source "$HOME/.nix-profile/share/bash-completion/completions/nix";
 source "$HOME/.nix-profile/share/bash-completion/completions/pass";
-source "$HOME/.nix-profile/share/bash-completion/completions/rg.bash";
 source "$HOME/.nix-profile/share/bash-completion/completions/zoxide.bash";
 
 # Enable zoxide
