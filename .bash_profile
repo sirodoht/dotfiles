@@ -47,8 +47,6 @@ source "$HOME/.cargo/env"
 # Add deno bin to PATH
 export PATH="/Users/sirodoht/.deno/bin:$PATH";
 
-# Add Racket to PATH
-export PATH="/Applications/Racket v8.8/bin:$PATH";
 
 # Load rbenv
 eval "$(~/.rbenv/bin/rbenv init - bash)";
