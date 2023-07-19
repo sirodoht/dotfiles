@@ -45,8 +45,7 @@ export PATH="$HOME/go/bin:$PATH";
 source "$HOME/.cargo/env"
 
 # Add deno bin to PATH
-export PATH="/Users/sirodoht/.deno/bin:$PATH";
-
+export PATH="$HOME/.deno/bin:$PATH";
 
 # Load rbenv
 eval "$(~/.rbenv/bin/rbenv init - bash)";
@@ -55,7 +54,7 @@ eval "$(~/.rbenv/bin/rbenv init - bash)";
 export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:$PATH";
 
 # Load anaconda
-__conda_setup="$('/Users/sirodoht/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 eval "$__conda_setup"
 unset __conda_setup
 
