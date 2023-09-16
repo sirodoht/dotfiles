@@ -55,6 +55,6 @@ autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup nound
 
 " restore cursor location when a file is opened unless it's a git commit
 autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") && &filetype != "gitcommit" |
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
         \ execute("normal `\"") |
     \ endif
