@@ -9,7 +9,7 @@ set showcmd
 set colorcolumn=80,100
 set shortmess-=S
 
-"statusline
+" status line
 set laststatus=2
 set statusline=%f  "filename
 set statusline+=%=  "empty space
@@ -25,14 +25,23 @@ set wrap
 set scrolloff=2
 set backspace=indent,eol,start
 
+set hlsearch
+set ignorecase
+set smartcase
+
 set shiftwidth=4
 set smarttab
 set tabstop=4
 set expandtab
 
-set hlsearch
-set ignorecase
-set smartcase
+" file format preferences
+filetype plugin indent on
+autocmd FileType go setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab
+autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd BufNewFile,BufRead *.csm set tabstop=2 shiftwidth=2 expandtab
 
 set backup
 set writebackup
@@ -41,15 +50,5 @@ set directory=~/.vim/cache
 set updatetime=500
 set modelines=0  "CVE-2007-2438
 
-syntax on
-filetype plugin indent on
-
-"file format preferences
-autocmd FileType go setlocal noexpandtab
-autocmd FileType make setlocal noexpandtab
-autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
-
-"exclude pass files from cache
+" exclude pass files from cache
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
