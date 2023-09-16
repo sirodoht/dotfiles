@@ -75,7 +75,7 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Edit system files and dotfiles
-alias viprof="vim ~/.bash_profile"
+alias viprofile="vim ~/.bash_profile"
 alias vialias="vim ~/.bash_aliases"
 alias vihost="sudo vim /etc/hosts"
 
