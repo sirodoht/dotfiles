@@ -52,3 +52,9 @@ set modelines=0  "CVE-2007-2438
 
 " exclude pass files from cache
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
+
+" restore cursor location when a file is opened unless it's a git commit
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") && &filetype != "gitcommit" |
+        \ execute("normal `\"") |
+    \ endif
