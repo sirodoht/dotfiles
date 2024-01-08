@@ -33,6 +33,10 @@ set smarttab
 set tabstop=4
 set expandtab
 
+set nobackup
+set updatetime=500
+set modelines=0  "CVE-2007-2438
+
 " file format preferences
 filetype plugin indent on
 autocmd FileType go setlocal noexpandtab
@@ -40,16 +44,8 @@ autocmd FileType make setlocal noexpandtab
 autocmd FileType yml setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd BufNewFile,BufRead *.csm set tabstop=2 shiftwidth=2 expandtab
 
-set backup
-set writebackup
-set backupdir=~/.vim/cache
-set directory=~/.vim/cache
-set updatetime=500
-set modelines=0  "CVE-2007-2438
-
-" exclude pass files from cache
+" set no swap for pass files
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
 
 " restore cursor location when a file is opened
