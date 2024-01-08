@@ -22,7 +22,6 @@ set statusline+=\ %l:%c  "row:col
 
 set nofoldenable
 set wrap
-set scrolloff=2
 set backspace=indent,eol,start
 
 set hlsearch
@@ -53,7 +52,7 @@ set modelines=0  "CVE-2007-2438
 " exclude pass files from cache
 autocmd BufNewFile,BufRead /private/**/pass** setlocal noswapfile nobackup noundofile
 
-" restore cursor location when a file is opened unless it's a git commit
+" restore cursor location when a file is opened
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
         \ execute("normal `\"") |
