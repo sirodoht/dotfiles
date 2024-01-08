@@ -6,7 +6,7 @@ set number
 set showmode
 set wildmenu
 set showcmd
-set colorcolumn=80,100
+set colorcolumn=88
 set shortmess-=S
 
 " status line
