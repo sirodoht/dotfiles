@@ -4,7 +4,7 @@
 
 [core]
 	editor = vim
-	pager = delta --light -n --wrap-max-lines 0 --hunk-header-style omit
+	pager = delta
 	excludesfile = ~/.gitignore
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -45,12 +45,12 @@
 
 [sendemail]
 	smtpserver = smtp.postmarkapp.com
-	smtpencryption = tls
-	smtpserverport = 587
-	confirm = auto
+	smtpuser = xxx
+	smtppass = xxx
+	smtpserverport = 25
 
 [interactive]
-	diffFilter = delta --color-only --wrap-max-lines 0
+	diffFilter = delta --color-only
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -75,8 +75,16 @@
 [pager]
 	branch = false
 
+[delta]
+	line-numbers = true
+	wrap-max-lines = 0
+	hunk-header-style = omit
+
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
+[includeIf "gitdir:~/src/podnetwork/**"]
+	path = ~/.gitconfig-podnetwork
